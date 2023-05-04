@@ -11,6 +11,7 @@ specifiers:
   autoprefixer: 10.4.14
   axios: ^1.4.0
   classnames: ^2.3.2
+  date-fns: ^2.30.0
   eslint: 8.39.0
   eslint-config-next: 13.3.4
   eslint-config-prettier: ^8.8.0
@@ -38,6 +39,7 @@ dependencies:
   autoprefixer: 10.4.14_postcss@8.4.23
   axios: 1.4.0
   classnames: 2.3.2
+  date-fns: 2.30.0
   eslint: 8.39.0
   eslint-config-next: 13.3.4_iacogk7kkaymxepzhgcbytyi7q
   next: 13.3.4_biqbaboplfbrettd7655fr4n2y
@@ -1176,6 +1178,16 @@ packages:
       {
         integrity: sha512-sdQSFB7+llfUcQHUQO3+B8ERRj0Oa4w9POWMI/puGtuf7gFywGmkaLCElnudfTiKZV+NvHqL0ifzdrI8Ro7ESA==,
       }
+    dev: false
+
+  /date-fns/2.30.0:
+    resolution:
+      {
+        integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==,
+      }
+    engines: { node: '>=0.11' }
+    dependencies:
+      '@babel/runtime': 7.21.5
     dev: false
 
   /debug/3.2.7:
