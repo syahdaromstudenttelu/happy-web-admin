@@ -43,7 +43,7 @@ export default function TransactionCard({
 
   const { authUsername, authPassword } = useAppSelector(authSelector);
 
-  const isExpired = Date.now() - Date.parse(expiredDate) > 0;
+  const isExpired = Date.now() - Date.parse(expiredDate) > 0 && !statusPayment;
   const disableAccBtn = statusPayment || isExpired || accLoading;
 
   const acceptHandler = async () => {
