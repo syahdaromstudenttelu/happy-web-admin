@@ -18,6 +18,7 @@ specifiers:
   eslint: 8.39.0
   eslint-config-next: 13.3.4
   eslint-config-prettier: ^8.8.0
+  eslint-plugin-jest-dom: ^4.0.3
   eslint-plugin-testing-library: ^5.10.3
   eslint-plugin-unused-imports: ^2.0.0
   husky: ^8.0.0
@@ -66,6 +67,7 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.59.1_2utyh6gct5glvuz6qwradubqqa
   '@typescript-eslint/parser': 5.59.1_iacogk7kkaymxepzhgcbytyi7q
   eslint-config-prettier: 8.8.0_eslint@8.39.0
+  eslint-plugin-jest-dom: 4.0.3_eslint@8.39.0
   eslint-plugin-testing-library: 5.10.3_iacogk7kkaymxepzhgcbytyi7q
   eslint-plugin-unused-imports: 2.0.0_ei2crdcxhh253rspcdkb2oxkny
   husky: 8.0.3
@@ -1167,6 +1169,23 @@ packages:
       }
     dependencies:
       tslib: 2.5.0
+
+  /@testing-library/dom/8.20.0:
+    resolution:
+      {
+        integrity: sha512-d9ULIT+a4EXLX3UU8FBjauG9NnsZHkHztXoIcTsOKoOw030fyjheN9svkTULjJxtYag9DZz5Jz5qkWZDPxTFwA==,
+      }
+    engines: { node: '>=12' }
+    dependencies:
+      '@babel/code-frame': 7.21.4
+      '@babel/runtime': 7.21.5
+      '@types/aria-query': 5.0.1
+      aria-query: 5.1.3
+      chalk: 4.1.2
+      dom-accessibility-api: 0.5.16
+      lz-string: 1.5.0
+      pretty-format: 27.5.1
+    dev: true
 
   /@testing-library/dom/9.2.0:
     resolution:
@@ -3000,6 +3019,21 @@ packages:
       - eslint-import-resolver-webpack
       - supports-color
     dev: false
+
+  /eslint-plugin-jest-dom/4.0.3_eslint@8.39.0:
+    resolution:
+      {
+        integrity: sha512-9j+n8uj0+V0tmsoS7bYC7fLhQmIvjRqRYEcbDSi+TKPsTThLLXCyj5swMSSf/hTleeMktACnn+HFqXBr5gbcbA==,
+      }
+    engines: { node: ^12.22.0 || ^14.17.0 || >=16.0.0, npm: '>=6', yarn: '>=1' }
+    peerDependencies:
+      eslint: ^6.8.0 || ^7.0.0 || ^8.0.0
+    dependencies:
+      '@babel/runtime': 7.21.5
+      '@testing-library/dom': 8.20.0
+      eslint: 8.39.0
+      requireindex: 1.2.0
+    dev: true
 
   /eslint-plugin-jsx-a11y/6.7.1_eslint@8.39.0:
     resolution:
@@ -6141,6 +6175,14 @@ packages:
         integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==,
       }
     engines: { node: '>=0.10.0' }
+    dev: true
+
+  /requireindex/1.2.0:
+    resolution:
+      {
+        integrity: sha512-L9jEkOi3ASd9PYit2cwRfyppc9NoABujTP8/5gFcbERmo5jUoAKovIC3fsF17pkTnGsrByysqX+Kxd2OTNI1ww==,
+      }
+    engines: { node: '>=0.10.5' }
     dev: true
 
   /requires-port/1.0.0:
