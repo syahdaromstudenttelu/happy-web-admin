@@ -9,7 +9,7 @@
     "lint": "next lint",
     "format": "prettier -w \"**/*.{js,jsx,ts,tsx,json,yaml,yml,css,md,mdx}\"",
     "format-c": "prettier -c \"**/*.{js,jsx,ts,tsx,json,yaml,yml,css,md,mdx}\"",
-    "test": "jest --watch",
+    "test": "jest --watch --verbose",
     "prepare": "husky install"
   },
   "dependencies": {
