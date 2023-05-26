@@ -6,6 +6,10 @@
 *.config.cjs
 *.config.mjs
 
+*.setup.js
+*.setup.cjs
+*.setup.mjs
+
 *.config.ts
 *.config.cts
 *.config.mts
