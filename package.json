@@ -10,7 +10,8 @@
     "format": "prettier -w \"**/*.{js,jsx,ts,tsx,json,yaml,yml,css,md,mdx}\"",
     "format-c": "prettier -c \"**/*.{js,jsx,ts,tsx,json,yaml,yml,css,md,mdx}\"",
     "test": "jest --watch --verbose",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
@@ -40,6 +41,7 @@
     "@types/testing-library__jest-dom": "^5.14.5",
     "@typescript-eslint/eslint-plugin": "^5.59.1",
     "@typescript-eslint/parser": "^5.59.1",
+    "cypress": "^12.13.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-jest-dom": "^4.0.3",
     "eslint-plugin-testing-library": "^5.10.3",
